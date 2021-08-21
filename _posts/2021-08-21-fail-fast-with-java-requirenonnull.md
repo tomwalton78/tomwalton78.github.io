@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Fail-fast with Java's requireNonNull method
-tags: java
+tags: Java
 ---
 
 Null pointer exceptions can be a tricky bug because they can occur far from where the root cause of the problem is. A `null` value may be passed into one method, and that method may pass the argument on to another method, and so on. Then, when that value is finally used, an exception will be thrown. To debug the issue, you need to trace the source of the bad data through your program.

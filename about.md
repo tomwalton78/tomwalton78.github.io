@@ -4,12 +4,4 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+I'm currently working as a Software Engineer for Amazon, based in London, UK. I mostly work with Java, AWS and React day to day, so expect to see some posts related to those topics. But also any other software engineering insights, ideas and practices I find interesting.
