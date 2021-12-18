@@ -63,7 +63,7 @@ While this is perfectly valid, the key disadvantage is that it's more verbose: 4
 
 ## Conclusion
 
-While it would be nice if we didn't have to worry about littering our code with `null` checks, the reality is this is just something we have to live with in Java. `requireNonNull` makes makes this issue a little less painful, helping us to avoid wasted time debugging null pointer exceptions. Other languages solve this problem in more elegant ways, such as [Kotlin's choice](https://kotlinlang.org/docs/null-safety.html#safe-calls) to not allow `null` values to be stored in a variable by default, and requiring the programmer to explicitly mark a variable with `?` in order to allow `null` values.
+While it would be nice if we didn't have to worry about littering our code with `null` checks, the reality is this is just something we have to live with in Java. `requireNonNull` makes this issue a little less painful, helping us to avoid wasted time debugging null pointer exceptions. Other languages solve this problem in more elegant ways, such as [Kotlin's choice](https://kotlinlang.org/docs/null-safety.html#safe-calls) to not allow `null` values to be stored in a variable by default, and requiring the programmer to explicitly mark a variable with `?` in order to allow `null` values.
 
 
 ## References

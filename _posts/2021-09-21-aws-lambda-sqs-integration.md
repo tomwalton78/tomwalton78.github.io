@@ -16,7 +16,7 @@ work how you might expect, which can lead to scaling issues if you're not carefu
 
 ## How does it work?
 
-![AWS Lambda-SQS integration digram](/images/figures/2021-09-21-aws-lambda-sqs-integration-diagram.png)
+![AWS Lambda-SQS integration diagram](/images/figures/2021-09-21-aws-lambda-sqs-integration-diagram.png)
 
 
 Lambda polls your SQS queue periodically, calling the `ReceiveMessage` API, in order to check for 
@@ -45,7 +45,7 @@ instances each
 minute. This only occurs up to the relevant concurrency limit, either at the account or Lambda function level.
 
 These two scaling processes are actually independent, and so if the Lambda SQS pollers call `Invoke` on your Lambda 
-function, but there are no instances available and you have reached the configured concurrency limit, then Lambda 
+function, but there are no instances available, and you have reached the configured concurrency limit, then Lambda 
 will actually throttle the requests, returning a 429 error. To the Lambda pollers, this looks just like any other 
 exception your Lambda function might throw, and the messages are not deleted from the queue. If this happens several 
 times to the 
@@ -84,7 +84,7 @@ compute to something like ECS, where you can choose how quickly to pull messages
 ## Conclusion
 
 The SQS Lambda trigger is a welcome addition that makes life much easier for developers. It can horizontally scale 
-to a large number of messages per second, and do so very quicky. However, it's not without its 
+to a large number of messages per second, and do so very quickly. However, it's not without its 
 pitfalls. If your workload might approach the thresholds where throttling can occur, it's worth load testing your 
 application. Or, if you need to consume messages from an SQS queue at a controlled rate, then the Lambda-SQS 
 trigger likely isn't for you.
@@ -96,6 +96,6 @@ trigger likely isn't for you.
 ## References
 
 - [AWS Docs: Using Lambda with Amazon SQS](https://docs.aws.amazon.com/lambda/latest/dg/with-sqs.html)
-- [AWS Docs: Lambda Function Scalingg](https://docs.aws.amazon.com/lambda/latest/dg/invocation-scaling.html)
+- [AWS Docs: Lambda Function Scaling](https://docs.aws.amazon.com/lambda/latest/dg/invocation-scaling.html)
 
 
