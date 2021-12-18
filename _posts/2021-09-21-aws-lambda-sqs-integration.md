@@ -95,7 +95,7 @@ trigger likely isn't for you.
 
 ## References
 
-- [https://docs.aws.amazon.com/lambda/latest/dg/with-sqs.html](https://docs.aws.amazon.com/lambda/latest/dg/with-sqs.html)
-- [https://docs.aws.amazon.com/lambda/latest/dg/invocation-scaling.html](https://docs.aws.amazon.com/lambda/latest/dg/invocation-scaling.html)
+- [AWS Docs: Using Lambda with Amazon SQS](https://docs.aws.amazon.com/lambda/latest/dg/with-sqs.html)
+- [AWS Docs: Lambda Function Scalingg](https://docs.aws.amazon.com/lambda/latest/dg/invocation-scaling.html)
 
 

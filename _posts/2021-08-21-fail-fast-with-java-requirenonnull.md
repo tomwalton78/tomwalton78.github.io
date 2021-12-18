@@ -66,9 +66,9 @@ While this is perfectly valid, the key disadvantage is that it's more verbose: 4
 While it would be nice if we didn't have to worry about littering our code with `null` checks, the reality is this is just something we have to live with in Java. `requireNonNull` makes makes this issue a little less painful, helping us to avoid wasted time debugging null pointer exceptions. Other languages solve this problem in more elegant ways, such as [Kotlin's choice](https://kotlinlang.org/docs/null-safety.html#safe-calls) to not allow `null` values to be stored in a variable by default, and requiring the programmer to explicitly mark a variable with `?` in order to allow `null` values.
 
 
-
 ## References
-- [https://docs.oracle.com/javase/8/docs/api/java/util/Objects.html#requireNonNull-T-](https://docs.oracle.com/javase/8/docs/api/java/util/Objects.html#requireNonNull-T-)
-- [https://en.wikipedia.org/wiki/Fail-fast](https://en.wikipedia.org/wiki/Fail-fast)
-- [https://kotlinlang.org/docs/null-safety.html#safe-calls](https://kotlinlang.org/docs/null-safety.html#safe-calls)
-- [https://stackoverflow.com/questions/45632920/why-should-one-use-objects-requirenonnull](https://stackoverflow.com/questions/45632920/why-should-one-use-objects-requirenonnull)
+
+- [Oracle Java Docs: Objects requireNonNull](https://docs.oracle.com/javase/8/docs/api/java/util/Objects.html#requireNonNull-T-)
+- [Wikipedia: Fail Fast](https://en.wikipedia.org/wiki/Fail-fast)
+- [Kotlin Lang: Null Safety](https://kotlinlang.org/docs/null-safety.html#safe-calls)
+- [Stack Overflow: Why should one use Objects.requireNonNull()?](https://stackoverflow.com/questions/45632920/why-should-one-use-objects-requirenonnull)
