@@ -4,6 +4,10 @@ title: About
 permalink: /about/
 ---
 
-I'm currently working as a Software Engineer for Amazon, based in London, UK. I mostly work with Java, AWS and React day to day, so expect to see some posts related to those topics. But also any other software engineering insights, ideas and practices I find interesting.
+I'm a London-based software engineer, writing about software engineering topics and practices which interest me. In 
+particular, I focus on concepts which I did not find intuitive at first, or best practices which aren't commonly 
+followed, 
+but should be. 
+Currently, I work mostly with Java and AWS.
 
 All opinions expressed on this site are my own, and do not represent those of my employer.
