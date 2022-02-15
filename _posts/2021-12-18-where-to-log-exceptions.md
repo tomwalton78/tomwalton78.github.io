@@ -25,7 +25,7 @@ try {
 ```
 
 The key thing to call out here is we pass the exception object itself to the logger, thereby allowing the logger to 
-log the full stack trace of the exception, so no information is lost. Additionally, we provide extra information that is available to us in the current context, such as the data source name. The ensures we get a nice, useful stack trace like so:
+log the full stack trace of the exception, so no information is lost. Additionally, we provide extra information that is available to us in the current context, such as the data source name. This ensures we get a nice, useful stack trace like so:
 
 ```
 2021-12-18T13:51:57.886 [main] ERROR loader.DataLoader - Failed to process data source: company A
