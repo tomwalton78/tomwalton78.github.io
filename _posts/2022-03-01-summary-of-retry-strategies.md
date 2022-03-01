@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A Brief Summary of Retry Strategies
-tags: API, Retry Strategy, Exponential Backoff, Token Bucket, Linear Backoff, Reliability
+tags: API, RetryStrategy, ExponentialBackoff, TokenBucket, LinearBackoff, Reliability
 ---
 
 The goal of this post is to help you pick the right retry strategy for your use case. This will enable you to overcome transient API request failures, without causing wider system failure. We will first consider what happens with no retry strategy, compared with using a simple linear backoff strategy. Then we will see how adding jitter to the exponential backoff strategy can solve the thundering herd problem. Finally, we will solve the retry storm problem by using the token bucket retry condition.
